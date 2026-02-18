@@ -5,17 +5,511 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-2</title>
 
-    <!-- link to announcement css -->
-    <link rel="stylesheet" href="/styles/announcement.css" />
-    <!-- link navbarcss -->
-    <link rel="stylesheet" href="/styles/navbar.css" />
+    <!-- link index.css -->
+    <link rel="stylesheet" href="/styles/index.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- announcement -->
     <div id="announcement"></div>
-
     <!-- navbar -->
     <div id="navbar"></div>
+
+    <!-- main content -->
+    <main class="main-container">
+      <!-- product container -->
+      <section class="product-container">
+        <!-- product header -->
+        <div class="product-header">
+          <p>Home</p>
+          <p>Power Short Sleeve Crew</p>
+        </div>
+
+        <!-- product content -->
+        <div class="product-content">
+          <!-- product image -->
+          <div class="product-images">
+            <div class="upper-images">
+              <img src="/assets/product-images/1.jpg" alt="" />
+              <img src="/assets/product-images/2.jpg" alt="" />
+              <img src="/assets/product-images/3.jpg" alt="" />
+            </div>
+
+            <div class="middle-image">
+              <img src="/assets/product-images/4.jpg" alt="" />
+            </div>
+
+            <div class="lower-images">
+              <img src="/assets/product-images/5.jpg" alt="" />
+              <img src="/assets/product-images/6.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- product info -->
+          <div class="product-info">
+            <!-- new tag -->
+            <div class="new-tag">
+              <div class="bar"></div>
+              <p>NEW</p>
+            </div>
+            <div class="product-title-wrapper">
+              <h2>
+                Power Short Sleeve <br />
+                Crew
+              </h2>
+              <p>£40.00</p>
+            </div>
+
+            <div class="product-choice">
+              <p>Gymshark</p>
+              <p>Mens</p>
+            </div>
+
+            <p class="oversized">Oversized</p>
+
+            <p class="product-color"><span>Color:</span> Cherry Brown Print</p>
+
+            <!-- color product images -->
+            <div class="product-color-images">
+              <img src="/assets/product-images/7.jpg" alt="" />
+              <img src="/assets/product-images/8.jpg" alt="" />
+              <img src="/assets/product-images/9.jpg" alt="" />
+              <img src="/assets/product-images/10.jpg" alt="" />
+            </div>
+
+            <!-- divider-->
+            <div class="divider"></div>
+
+            <!-- select size -->
+            <div class="select-size-container">
+              <!-- head -->
+              <div class="select-size-head">
+                <p>Select size</p>
+                <div>
+                  <img src="/assets/nav-icons/size.png" alt="" />
+                  <img src="/assets/nav-icons/size-1.png" alt="" />
+                  <p>size guide</p>
+                </div>
+              </div>
+
+              <!-- select size box -->
+              <div class="select-size-box">
+                <div>XS</div>
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+                <div>XXL</div>
+                <div>3XL</div>
+              </div>
+            </div>
+
+            <!-- button -->
+            <div class="atc-btn">
+              <div>
+                <button class="add-to-bag">Add to bag</button>
+              </div>
+              <div>
+                <button class="add-to-wishlist">
+                  <i style="margin-right: 6px" class="fa-regular fa-heart"></i
+                  >Add to wishlist
+                </button>
+              </div>
+            </div>
+
+            <p
+              style="
+                font-family: &quot;Roboto&quot;, sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0%;
+              "
+            >
+              Checkout today. Interest free.
+            </p>
+
+            <!-- instalments -->
+            <div class="instalments">
+              <img src="/assets/nav-icons/klarna.png" alt="" />
+              <p
+                style="
+                  font-family: &quot;Roboto&quot;, sans-serif;
+                  color: #444444;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 21px;
+                  letter-spacing: 0%;
+                "
+              >
+                Pay in 3instalments of
+                <span style="font-weight: 700">£13.33</span>
+              </p>
+            </div>
+
+            <!-- free offers -->
+            <div class="free-offers">
+              <ul>
+                <li>
+                  <img src="/assets/nav-icons/free-returns.png" alt="" />Free
+                  Returns On All Orders
+                </li>
+                <li>
+                  <img src="/assets/nav-icons/free-delivery.png" alt="" />Free
+                  Standard Delivery over £45
+                </li>
+                <li>
+                  <img src="/assets/nav-icons/free-delivery-2.png" alt="" />Free
+                  Express Delivery over £65
+                </li>
+              </ul>
+            </div>
+
+            <!-- divider-->
+            <div class="divider"></div>
+
+            <p
+              style="
+                font-family: &quot;Montserrat&quot;, sans-serif;
+                color: #000000;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                margin-bottom: 19px;
+              "
+            >
+              Description
+            </p>
+
+            <p
+              style="
+                font-family: &quot;Roboto&quot;, sans-serif;
+                color: #444444;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                margin-bottom: 42px;
+              "
+            >
+              POWER. MADE TO FAIL IN.
+            </p>
+
+            <p
+              style="
+                font-family: &quot;Roboto&quot;, sans-serif;
+                color: #444444;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                letter-spacing: 0%;
+
+                margin-bottom: 26px;
+              "
+            >
+              The Power collection is made to fail with you, time and time
+              again. Durable, stretchy fabrics will support you through every
+              lift and graphic patterns make every fail look and feel epic.
+              Lifting-specific designs and detailing mean zero distractions, so
+              you can surpass your limits fully focused. Perfect pump covers,
+              and ultra flattering shapes so you can show off your hard work.
+              Power. With you until failure.
+            </p>
+
+            <ul class="extra-info">
+              <li>Oversized fit</li>
+              <li>All over jacquard</li>
+              <li>Embroidered logo to centre back</li>
+              <li>Crew neck</li>
+              <li>2x2 ribbed cuff and hem</li>
+              <li>Embroidered sharkhead logo to chest</li>
+              <li>63% Polyester, 32% Cotton, 5% Elastane</li>
+              <li>
+                We've cut down on our use of swing tags, so this product comes
+                without one
+              </li>
+              <li>Model is</li>
+              <li>SKU: A1A4W-NBD4</li>
+            </ul>
+
+            <!-- divider-->
+            <div class="divider"></div>
+
+            <p
+              style="
+                font-family: &quot;Montserrat&quot;, sans-serif;
+                color: #444444;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                margin-bottom: 13px;
+              "
+            >
+              Delivery & Returns
+            </p>
+
+            <!-- divider-->
+            <div class="divider"></div>
+
+            <!-- share -->
+            <div class="share">
+              <img src="/assets/nav-icons/share.png" alt="" />
+              <p>share</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- slider-section  -->
+      <section class="slider-section">
+        <div class="slider-section-head">
+          <h2 class="wear-it">WEAR IT WITH</h2>
+          <h2 class="might-like">You might like</h2>
+        </div>
+
+        <div class="slider-container">
+          <!-- Left Button -->
+          <button class="nav-btn prev">❮</button>
+
+          <!-- Slider -->
+          <div class="slider" id="slider">
+            <!-- Item 1 -->
+            <div class="card">
+              <img src="/assets/collection-images/1.jpg" />
+
+              <!-- collection-price-info-->
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+
+                <p>£20.00</p>
+              </div>
+
+              <!-- designation -->
+              <div>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #444444;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                  "
+                >
+                  Sports Tech Boxers 2pk
+                </p>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #6e6e6e;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                  "
+                >
+                  Black/Core Olive
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="card">
+              <img src="/assets/collection-images/2.jpg" />
+
+              <!-- collection-price-info-->
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+
+                <p>£20.00</p>
+              </div>
+
+              <!-- designation -->
+              <div>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #444444;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                  "
+                >
+                  Sports Tech Boxers 2pk
+                </p>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #6e6e6e;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                  "
+                >
+                  Black/Core Olive
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="card">
+              <img src="/assets/collection-images/3.jpg" />
+              <!-- collection-price-info-->
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+
+                <p>£20.00</p>
+              </div>
+
+              <!-- designation -->
+              <div>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #444444;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                  "
+                >
+                  Sports Tech Boxers 2pk
+                </p>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #6e6e6e;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                  "
+                >
+                  Black/Core Olive
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="card">
+              <img src="/assets/collection-images/4.jpg" />
+              <!-- collection-price-info-->
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+
+                <p>£20.00</p>
+              </div>
+
+              <!-- designation -->
+              <div>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #444444;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                  "
+                >
+                  Sports Tech Boxers 2pk
+                </p>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #6e6e6e;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                  "
+                >
+                  Black/Core Olive
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="card">
+              <img src="/assets/collection-images/2.jpg" />
+              <!-- collection-price-info-->
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+
+                <p>£20.00</p>
+              </div>
+
+              <!-- designation -->
+              <div>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #444444;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    letter-spacing: 0%;
+                    text-transform: capitalize;
+                  "
+                >
+                  Sports Tech Boxers 2pk
+                </p>
+                <p
+                  style="
+                    font-family: &quot;Roboto&quot;, sans-serif;
+                    color: #6e6e6e;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                  "
+                >
+                  Black/Core Olive
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Button -->
+          <button class="nav-btn next">❯</button>
+        </div>
+      </section>
+    </main>
+
     <script>
       // navbar
       fetch("navbar.html")
@@ -38,5 +532,7 @@
           document.getElementById("footer").innerHTML = data;
         });
     </script>
+
+    <script src="/js/slider.js"></script>
   </body>
 </html>
