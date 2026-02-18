@@ -1,0 +1,63 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.announcement-bar {
+  background-color: rgba(219, 214, 214, 0.421);
+}
+ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16.1px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+#announcement-menu-list {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: end;
+  padding-right: 13px;
+}
+
+#my-account {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#my-account img {
+  width: 18px;
+  height: 14px;
+}
+#united-kingdom {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.down-arrow {
+  width: 6px;
+  height: 10px;
+  color: #444444;
+}
+
+.line {
+  height: 35px;
+  width: 1px;
+  background-color: #d2d2d2;
+}
+
+/* mobile menu */
+@media (max-width: 768px) {
+  .announcement-bar {
+    display: none;
+  }
+}

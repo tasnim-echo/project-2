@@ -1,0 +1,137 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 28px;
+  padding-left: 61px;
+  padding-right: 19px;
+}
+
+.navbar ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.1px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navbar #nav-menu-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#nav-btn-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#search-icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+#love-icon img {
+  width: 18px;
+  height: 16px;
+  object-fit: contain;
+}
+
+#user-icon img {
+  width: 19px;
+  height: 18px;
+  object-fit: contain;
+}
+#cart img {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.navbar p {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.navbar p span {
+  font-weight: 400;
+}
+.underline {
+  height: 1px;
+  background-color: #e7e7e7;
+}
+
+.sub-nav p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12.65px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+/* mobile menu */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .navbar #nav-menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  #nav-menu-list.active {
+    display: flex;
+  }
+
+  .navbar #nav-btn-list {
+    display: none;
+
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .navbar #nav-btn-list.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .sub-nav {
+    display: none;
+  }
+}

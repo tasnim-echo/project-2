@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-2</title>
+
+    <!-- link to announcement css -->
+    <link rel="stylesheet" href="/styles/announcement.css" />
+    <!-- link navbarcss -->
+    <link rel="stylesheet" href="/styles/navbar.css" />
+  </head>
+  <body>
+    <!-- announcement -->
+    <div id="announcement"></div>
+
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <script>
+      // navbar
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      // announcement
+      fetch("announcement.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("announcement").innerHTML = data;
+        });
+
+      // footer
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
