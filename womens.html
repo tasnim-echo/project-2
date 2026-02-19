@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link css womens css -->
+    <link rel="stylesheet" href="/styles/womens.css" />
+  </head>
+  <body>
+    <!-- announcement -->
+    <div id="announcement"></div>
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- hero section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>New in: LEGACY</h1>
+        <p>Golden era bodybuilding meets modern comforts</p>
+        <button>SHOP</button>
+      </div>
+    </section>
+
+    <script>
+      // navbar
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      // announcement
+      fetch("announcement.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("announcement").innerHTML = data;
+        });
+
+      // footer
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+
+          // Run accordion AFTER footer loads
+          initAccordion();
+        });
+
+      function initAccordion() {
+        const accordions = document.querySelectorAll(".accordion-header");
+
+        accordions.forEach((header) => {
+          header.addEventListener("click", function () {
+            header.classList.toggle("active");
+
+            const content = header.nextElementSibling;
+
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
+    <!-- script for accordion in footer -->
+    <script src="/js/accordion-footer.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

@@ -95,6 +95,12 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+.mobile-text {
+  display: none;
+}
+.mobile-left #search-icon {
+  display: none;
+}
 /* mobile menu */
 @media (max-width: 768px) {
   .navbar {
