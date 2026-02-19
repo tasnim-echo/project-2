@@ -1,7 +1,7 @@
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4, // how many slides visible
-  spaceBetween: 15, // space between slides
-  loop: true, // infinite loop
+  slidesPerView: 4,
+  spaceBetween: 10,
+  loop: true, // infinite loop disi
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
