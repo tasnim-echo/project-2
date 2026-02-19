@@ -98,12 +98,65 @@ body {
 /* mobile menu */
 @media (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
+  /* Left side Hamburger + Search */
+  .mobile-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mobile-text {
+    color: #000000;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #user-icon {
+    display: none;
+  }
+
+  /* Show mobile logo */
+  .mobile-text {
+    display: block;
+  }
+
+  /* Hide desktop logo */
+  .company-logo {
+    display: none;
+  }
+
+  /* Right side: Love + Cart only */
+  #nav-btn-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Hide user icon on mobile */
+  #user-icon {
+    display: none;
+  }
+
+  /* Hide old search icon from right */
+  #nav-btn-list #search-icon {
+    display: none;
+  }
+
+  /* Hamburger visible */
   .hamburger {
     display: block;
   }
+
   .navbar #nav-menu-list {
     display: none;
     flex-direction: column;
@@ -116,21 +169,6 @@ body {
     display: flex;
   }
 
-  .navbar #nav-btn-list {
-    display: none;
-
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  .navbar #nav-btn-list.active {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
   .sub-nav {
     display: none;
   }
