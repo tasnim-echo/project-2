@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -60,4 +61,250 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-top: 20px;
+}
+/* legacy collection */
+.legacy-collection-container {
+  padding-inline: 60px;
+  margin-top: 29px;
+}
+.legacy-collection-header > p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #53565a;
+}
+.legacy-collection-header div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.4px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  color: #000000;
+  cursor: pointer;
+}
+.legacy-collection-header > div {
+  display: flex;
+  justify-content: space-between;
+}
+.legacy-collection-images {
+  display: flex;
+  gap: 14px;
+}
+.legacy-collection-images {
+  margin-top: 29px;
+  margin-bottom: 32px;
+}
+.legacy-collection-card {
+  position: relative;
+  width: 320px;
+}
+.legacy-collection-card img {
+  width: 100%;
+  height: 385px;
+  object-fit: cover;
+}
+
+.legacy-collection-card > p {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 94%;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  background-color: #ffffffcc;
+  color: #000;
+}
+.legacy-collection-card .new-tag .bar {
+  width: 3px;
+  height: 15px;
+  background-color: #000000;
+}
+.legacy-collection-card .new-tag > div > div > p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12.65px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+.legacy-collection-card .new-tag > div > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.legacy-collection-card .new-tag > div {
+  display: flex;
+  justify-content: space-between;
+}
+.legacy-collection-card .new-tag > div > p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+}
+.legacy-collection-card .product-title-wrapper h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #444444;
+  font-family: "Roboto", sans-serif;
+  margin-top: 7px;
+}
+.legacy-collection-card .product-title-wrapper p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #6e6e6e;
+  font-family: "Roboto", sans-serif;
+  margin-top: 7px;
+}
+.legacy-collection-card-2 .badge-alt {
+  background-color: #ffffffcc;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-inline: 30px;
+  padding-bottom: 15px;
+  width: 94%;
+  height: 150px;
+}
+.legacy-collection-card-2 .badge-alt .select-size-box {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.legacy-collection-card-2 .badge-alt .select-size-box div {
+  background-color: #ffffff;
+  width: 43px;
+  height: 41px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  .legacy-collection-card-2 .badge-alt .select-size-box div {
+    background-color: #ffffff;
+    width: 43px;
+    height: 41px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+
+    /* Drop Shadow */
+    box-shadow: 0px 0px 5px 0px #00000026;
+  }
+}
+.legacy-collection-card-2 .badge-alt p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 13px;
+}
+
+/* all new design */
+.all-new-design {
+  position: relative;
+  width: 100%;
+  height: 569px;
+  background-image: url("/assets/womens-page/BackgroundImages/bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.all-new-design .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000000a6;
+  z-index: 1;
+}
+
+/* content on top of overlay */
+.new-design-content {
+  z-index: 2;
+}
+.new-design-content h2 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+.new-design-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+
+  color: #ffffff;
+}
+
+/* button styling */
+.new-design-content div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 42px;
+}
+.new-design-content div button {
+  width: 171px;
+  height: 45px;
+  border-radius: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+}
+.new-design-content div button:nth-child(1) {
+  background-color: #ffffff;
+  color: #000000;
+}
+.new-design-content div button:nth-child(2) {
+  background-color: #53565a;
+  color: #ffffff;
 }
