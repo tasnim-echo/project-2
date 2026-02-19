@@ -355,11 +355,28 @@ body {
 }
 
 /* slider-section  */
-.slider-section {
+.slider-container {
   height: 787px;
   background-color: #f5f5f5;
   margin-inline: -50px;
   padding-top: 50px;
+  padding-inline: 50px;
+}
+.swiper {
+  padding: 20px 0;
+}
+.swiper-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.swiper-slide {
+  width: 250px; /* adjust width as you want */
+  flex-shrink: 0;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 382px;
+  object-fit: cover;
 }
 
 .slider-section-head {
@@ -368,7 +385,7 @@ body {
   gap: 32px;
 }
 
-.slider-section h2.wear-it {
+.slider-section-head h2.wear-it {
   text-align: center;
   color: #000000;
   margin-bottom: 20px;
@@ -378,7 +395,7 @@ body {
   letter-spacing: 0%;
   text-transform: uppercase;
 }
-.slider-section h2.might-like {
+.slider-section-head h2.might-like {
   text-align: center;
   color: #6e6e6e;
   margin-bottom: 20px;
@@ -387,28 +404,6 @@ body {
   line-height: 21px;
   letter-spacing: 0%;
   text-transform: uppercase;
-}
-
-/* Container */
-.slider-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-inline: 16px;
-}
-
-/* Slider */
-.slider {
-  display: flex;
-  gap: 10px;
-
-  margin: 0 auto;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
 }
 
 .card img {
@@ -500,6 +495,9 @@ body {
 .mobile-price {
   display: none;
 }
+#price-for-mobile-view {
+  display: none;
+}
 
 /* mobile menu */
 @media (max-width: 768px) {
@@ -566,5 +564,33 @@ body {
   }
   .product-color-images {
     margin-top: 71px;
+  }
+  /* slider section */
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  /* slider-section  */
+  .slider-container {
+    background-color: #f5f5f5;
+    margin-inline: -50px;
+    height: 650px;
+    padding-inline: 50px;
+    padding-block: 50px;
+  }
+  .collection-price-info > p {
+    display: none;
+  }
+  #price-for-mobile-view {
+    display: block;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-top: 5px;
   }
 }

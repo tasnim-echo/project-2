@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-2</title>
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <!-- link index.css -->
     <link rel="stylesheet" href="/styles/index.css" />
 
@@ -277,7 +283,99 @@
       </section>
 
       <!-- slider-section  -->
-      <div id="slider"></div>
+      <div class="slider-container">
+        <div class="slider-section-head">
+          <h2 class="wear-it">WEAR IT WITH</h2>
+          <h2 class="might-like">You might like</h2>
+        </div>
+        <!-- Slider wrapper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Each card is now a swiper-slide -->
+            <div class="swiper-slide card">
+              <img src="/assets/collection-images/1.jpg" />
+              <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <p class="card-title">Sports Tech Boxers 2pk</p>
+              <p class="card-subtitle">Black/Core Olive</p>
+
+              <p id="price-for-mobile-view">£20.00</p>
+            </div>
+            <div class="swiper-slide card">
+              <img src="/assets/collection-images/2.jpg" />
+              <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <p class="card-title">Sports Tech Boxers 2pk</p>
+              <p class="card-subtitle">Black/Core Olive</p>
+
+              <p id="price-for-mobile-view">£20.00</p>
+            </div>
+            <div class="swiper-slide card">
+              <img src="/assets/collection-images/3.jpg" />
+              <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <p class="card-title">Sports Tech Boxers 2pk</p>
+              <p class="card-subtitle">Black/Core Olive</p>
+
+              <p id="price-for-mobile-view">£20.00</p>
+            </div>
+            <div class="swiper-slide card">
+              <img src="/assets/collection-images/4.jpg" />
+              <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <p class="card-title">Sports Tech Boxers 2pk</p>
+              <p class="card-subtitle">Black/Core Olive</p>
+
+              <p id="price-for-mobile-view">£20.00</p>
+            </div>
+            <div class="swiper-slide card">
+              <img src="/assets/collection-images/5.jpg" />
+              <div class="card-heart"><i class="fa-regular fa-heart"></i></div>
+              <div class="collection-price-info">
+                <div class="collection-price-info-new-tag">
+                  <div class="bar"></div>
+                  <p>NEW</p>
+                </div>
+                <p>£20.00</p>
+              </div>
+              <p class="card-title">Sports Tech Boxers 2pk</p>
+              <p class="card-subtitle">Black/Core Olive</p>
+
+              <p id="price-for-mobile-view">£20.00</p>
+            </div>
+
+            <!-- repeat for all cards -->
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
     </main>
 
     <div id="footer"></div>
@@ -297,21 +395,37 @@
           document.getElementById("announcement").innerHTML = data;
         });
 
-      // announcement
-      fetch("slider.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("slider").innerHTML = data;
-        });
-
       // footer
+
       fetch("footer.html")
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
+
+          // Run accordion AFTER footer loads
+          initAccordion();
         });
+
+      function initAccordion() {
+        const accordions = document.querySelectorAll(".accordion-header");
+
+        accordions.forEach((header) => {
+          header.addEventListener("click", function () {
+            header.classList.toggle("active");
+
+            const content = header.nextElementSibling;
+
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        });
+      }
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/js/slider.js"></script>
     <!-- script for accordion in footer -->
     <script src="/js/accordion-footer.js"></script>
