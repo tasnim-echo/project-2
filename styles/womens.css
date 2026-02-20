@@ -678,7 +678,7 @@ body {
   .legacy-collection-card:nth-last-child(-n + 2) {
     display: none;
   }
-  .legacy-collection-container.show-all
+  .legacy-collection-images.show-all
     .legacy-collection-card:nth-last-child(-n + 2) {
     display: block;
   }
@@ -744,5 +744,95 @@ body {
     flex-direction: column;
     gap: 20px;
     margin-top: 42px;
+  }
+
+  /* new design collection */
+  .new-design-collection > div {
+    display: block;
+  }
+
+  .new-design-collection > div > p {
+    margin-top: 5px;
+  }
+  .new-design-collection {
+    padding-inline: 20px;
+    margin-top: 29px;
+  }
+
+  /* header same as legacy */
+  .new-design-collection .legacy-collection-header > div {
+    display: block;
+  }
+
+  .new-design-collection .legacy-collection-card img {
+    width: 100%;
+    height: 193px;
+    object-fit: cover;
+  }
+
+  .new-design-collection .legacy-collection-card:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .legacy-collection-images.show-all
+    .legacy-collection-card:nth-last-child(-n + 2) {
+    display: block;
+  }
+
+  /* position text label */
+  .new-design-collection .legacy-collection-card > p {
+    top: 53%;
+    left: 50%;
+  }
+
+  /* hide badge-alt if any */
+  .new-design-collection .badge-alt {
+    display: none;
+  }
+
+  /* new-tag layout */
+  .new-design-collection .legacy-collection-card .new-tag > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* card base */
+  .new-design-collection .legacy-collection-card {
+    position: relative;
+  }
+
+  /* regular-fit / slim-fit toggle */
+  .new-design-collection .legacy-collection-card .regular-fit {
+    display: flex;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    background-color: #ffffffcc;
+    color: #000;
+  }
+
+  .new-design-collection .legacy-collection-card .slim-fit {
+    display: none;
+  }
+
+  /* flex wrap & 2-column layout */
+  .new-design-collection .legacy-collection-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .new-design-collection .legacy-collection-card {
+    width: calc(50% - 7px);
   }
 }
