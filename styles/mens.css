@@ -135,6 +135,31 @@ button.light {
   margin: 0 auto;
   margin-top: 26px;
 }
+.new-tag {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.new-tag-content .bar {
+  width: 3px;
+  height: 16.6px;
+  background-color: #000000;
+}
+.new-tag-content .new {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 12.65px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.new-tag .new-tag-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
 /* best-sellers-collection */
 .collection-cards {
@@ -222,6 +247,9 @@ button.light {
   color: #797979;
 }
 /* motivation info */
+.motivation {
+  margin-bottom: 30px;
+}
 .motivation {
   width: 100%;
   aspect-ratio: 1440 / 644;
