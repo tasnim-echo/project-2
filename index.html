@@ -386,6 +386,11 @@
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("navbar").innerHTML = data;
+
+          setTimeout(() => {
+            document.querySelector(".sub-nav-info .sign-up").style.display =
+              "none";
+          }, 50);
         });
 
       // announcement

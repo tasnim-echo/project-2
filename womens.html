@@ -593,6 +593,12 @@
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("navbar").innerHTML = data;
+
+          //   hide underline,delaying 50ms so that everything renders
+          setTimeout(() => {
+            document.querySelector(".sub-nav-info .sign-up").style.display =
+              "none";
+          }, 50);
         });
 
       // announcement

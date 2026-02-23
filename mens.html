@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link css mens css -->
+    <link rel="stylesheet" href="/styles/mens.css" />
+  </head>
+  <body>
+    <!-- announcement -->
+    <div id="announcement"></div>
+    <!-- navbar -->
+    <div id="navbar"></div>
+
+    <!-- main container -->
+    <div>
+      <!-- best sellers -->
+      <div class="best-sellers">
+        <div class="best-sellers-content">
+          <h2>
+            BEST <br />
+            <span>SELLERS</span>
+          </h2>
+          <button>SHOP</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar and footer import -->
+    <script>
+      // navbar
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+
+          //   hide underline,delaying 50ms so that everything renders
+          setTimeout(() => {
+            document
+              .querySelectorAll(".sub-nav .underline")
+              .forEach((el) => (el.style.display = "none"));
+          }, 50);
+        });
+
+      // announcement
+      fetch("announcement.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("announcement").innerHTML = data;
+        });
+
+      // footer
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+
+          // Run accordion AFTER footer loads
+          initAccordion();
+        });
+
+      function initAccordion() {
+        const accordions = document.querySelectorAll(".accordion-header");
+
+        accordions.forEach((header) => {
+          header.addEventListener("click", function () {
+            header.classList.toggle("active");
+
+            const content = header.nextElementSibling;
+
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        });
+      }
+    </script>
+    <!-- script for accordion in footer -->
+    <script src="/js/accordion-footer.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

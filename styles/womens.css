@@ -636,6 +636,14 @@ body {
 .community-msg span {
   display: none;
 }
+.community-msg h3:nth-child(1) {
+  display: block;
+}
+.community-msg h3:nth-child(2) {
+  display: none;
+  font-size: 20px;
+  text-align: center;
+}
 
 /* Default (Desktop) */
 .legacy-collection-card .regular-fit {

@@ -89,6 +89,21 @@ body {
   text-align: center;
   padding-block: 20px;
 }
+.sub-nav .sub-nav-info {
+  display: flex;
+  position: relative;
+}
+.sub-nav .sub-nav-info p:nth-child(1) {
+  margin: 0 auto;
+  text-align: center;
+  right: 40%;
+}
+.sub-nav .sub-nav-info p:nth-child(2) {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  right: 0%;
+}
 
 .hamburger {
   display: none;
