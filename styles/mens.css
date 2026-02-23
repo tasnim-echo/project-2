@@ -56,3 +56,135 @@ body {
   margin: 0 auto;
   margin-top: 40px;
 }
+
+/* global */
+.collection-wrapper {
+  margin-inline: 60px;
+  margin-block: 30px;
+}
+.collection-wrapper .collection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+.collection-wrapper .collection-header .mens {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #53565a;
+}
+.collection-wrapper .collection-header div h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.collection-wrapper .collection-header .view-all {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.4px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/* best-sellers-collection */
+.collection-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
+  gap: 10px;
+}
+.collection-card img {
+  width: 100%;
+  height: 384px;
+  object-fit: cover;
+}
+.collection-card {
+  position: relative;
+}
+
+.badge.label {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.badge.label {
+  background-color: #ffffffcc;
+  padding: 8px 16px;
+  width: 95%;
+}
+
+.badge.discount img {
+  width: 26px;
+  height: 20px;
+}
+.badge.discount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.badge-content {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.badge-content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 12.65px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #e5323a;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.product-info h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #444444;
+}
+.product-info p.color {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #6e6e6e;
+}
+.product-info p.actual-price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-decoration: line-through;
+  color: #797979;
+}
