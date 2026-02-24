@@ -11,6 +11,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* best sellers */
@@ -135,6 +136,23 @@ button.light {
   width: max-content;
   margin: 0 auto;
   margin-top: 26px;
+  background-color: #ffffff;
+  color: #000000;
+}
+button.dark {
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin-top: 26px;
+  background-color: #000000;
+  color: #ffffff;
 }
 .new-tag {
   display: flex;
@@ -169,18 +187,25 @@ button.light {
   grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
   gap: 10px;
 }
+/* .collection-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+} */
 .collection-card img {
   width: 100%;
+  /* max-height: 384px; max-height is making an image smaller */
   height: 384px;
   object-fit: cover;
 }
-.collection-card {
+
+.image-box {
   position: relative;
 }
 
 .badge.label {
   position: absolute;
-  top: 74%;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -199,6 +224,7 @@ button.light {
 .badge.discount {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -217,12 +243,13 @@ button.light {
   color: #e5323a;
 }
 
-.product-info {
+.product-info-men {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-.product-info h3 {
+.product-info-men h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -231,7 +258,7 @@ button.light {
   text-transform: capitalize;
   color: #444444;
 }
-.product-info p.color {
+.product-info-men p.color {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -240,7 +267,7 @@ button.light {
   text-transform: capitalize;
   color: #6e6e6e;
 }
-.product-info p.actual-price {
+.product-info-men p.actual-price {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -330,4 +357,71 @@ button.light {
 }
 .new-speed-content {
   margin-bottom: 60px;
+}
+/* general collection */
+.general-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(655px, 1fr));
+  gap: 10px;
+}
+.general-card img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+.general-card {
+  position: relative;
+  overflow: hidden;
+}
+.general-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 21px;
+}
+.general-card .overlay {
+  position: absolute;
+  inset: 0; /* top:0 right:0 bottom:0 left:0 */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.general-card.left-card .overlay {
+  align-items: flex-start;
+  margin-left: 60px;
+}
+
+.general-card.right-card .overlay {
+  align-items: flex-end;
+  margin-right: 60px;
+}
+/* community-msg */
+.community-msg {
+  border: 1px solid #bbbcbc;
+  padding-left: 33px;
+  padding-right: 39px;
+  padding-block: 33px;
+  margin-inline: 60px;
+}
+.community-msg h3 {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+.community-msg p {
+  color: #6e6e6e;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-top: 17px;
 }
