@@ -113,6 +113,24 @@ body {
 .mobile-menu-container {
   display: none;
 }
+.cart {
+  position: relative;
+}
+
+.cart span {
+  background-color: #007db5;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  padding-inline: 5px;
+  padding-block: 0.5px;
+  border-radius: 1px;
+  position: absolute;
+  top: 8px;
+  right: -6px;
+}
 /* mobile menu */
 @media (max-width: 768px) {
   .mobile-nav {
@@ -205,5 +223,10 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+  }
+  .cart span {
+    border-radius: 50%;
+    padding-inline: 8px;
+    padding-block: 2px;
   }
 }
