@@ -161,6 +161,15 @@ button.dark {
   margin-bottom: 8px;
   margin-top: 5px;
 }
+.new-tag .price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+}
 .new-tag-content .bar {
   width: 3px;
   height: 16.6px;
@@ -354,9 +363,18 @@ button.dark {
   align-items: end;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
+}
+.new-speed::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #0000004d;
+  z-index: 1;
 }
 .new-speed-content {
   margin-bottom: 60px;
+  z-index: 2;
 }
 /* general collection */
 .general-collection {
@@ -503,5 +521,82 @@ button.dark {
   }
   .badge.discount {
     display: block;
+  }
+  /* motivation */
+  .motivation {
+    height: 506px;
+
+    justify-content: end;
+  }
+  .motivation .motivation-content {
+    margin-left: 20px;
+    padding-bottom: 85px;
+  }
+
+  /* legacy  */
+  .legacy {
+    height: 593px;
+    justify-content: center;
+  }
+  .legacy::before {
+    filter: blur(0);
+    background-size: 280%;
+  }
+  .legacy .legacy-content {
+    margin-left: 20px;
+  }
+
+  /* Free your movement */
+  .free-movement {
+    height: 598px;
+    background-size: 270%;
+    background-position: 45% center;
+    justify-content: end;
+  }
+
+  .free-movement .free-movement-content {
+    margin-left: 20px;
+    padding-bottom: 134px;
+  }
+
+  /* new speed */
+  .new-speed {
+    height: 590px;
+  }
+  .new-speed-content {
+    margin-bottom: 151px;
+  }
+  /* general-collection */
+  .general-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px, 1fr));
+    gap: 10px;
+  }
+  .general-card.left-card .overlay {
+    justify-content: end;
+    align-items: flex-start;
+    margin-left: 15px;
+    padding-bottom: 33px;
+  }
+
+  .general-card.right-card .overlay {
+    justify-content: end;
+    align-items: flex-end;
+    margin-right: 15px;
+    padding-bottom: 33px;
+  }
+  .general-card img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+  }
+  /* community-msg */
+  .community-msg {
+    padding-inline: 15px;
+    padding-block: 33px;
+    margin-inline: 20px;
+  }
+  .line-before-footer {
+    display: none;
   }
 }

@@ -14,6 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="navbar">
@@ -22,29 +30,22 @@
         <div class="company-logo">
           <p>GYM <span>FIT</span></p>
         </div>
-
-        <!-- left mobile area -->
-        <div class="mobile-left">
-          <div class="hamburger" id="hamburger">☰</div>
-
-          <div id="search-icon">
-            <img src="/assets/nav-icons/search.png" alt="" />
-          </div>
-        </div>
-
-        <!-- mobile logo -->
-        <span class="mobile-text">GT</span>
-
         <!-- menu -->
-
         <ul id="nav-menu-list">
-          <li id="home-nav-menu">Home</li>
-          <li id="Womens-nav-menu">Womens</li>
-          <li id="MENS-nav-menu">MENS</li>
+          <li>
+            <a href="index.html" id="home-nav-menu">Home</a>
+          </li>
+
+          <li>
+            <a href="womens.html" id="Womens-nav-menu">Womens</a>
+          </li>
+
+          <li>
+            <a href="mens.html" id="MENS-nav-menu">MENS</a>
+          </li>
         </ul>
 
         <!-- rightSide button  -->
-
         <ul id="nav-btn-list">
           <li id="search-icon">
             <img src="/assets/nav-icons/search.png" alt="" />
@@ -58,6 +59,49 @@
           <li id="cart"><img src="/assets/nav-icons/cart.png" alt="" /></li>
         </ul>
       </nav>
+      <!-- end of desktop menu -->
+
+      <!-- left mobile area -->
+      <div class="mobile-nav">
+        <div class="mobile-nav-side">
+          <div class="hamburger" id="hamburger">☰</div>
+
+          <div id="search-icon-mobile">
+            <img src="/assets/nav-icons/search.png" alt="" />
+          </div>
+        </div>
+        <!-- mobile logo -->
+        <span class="mobile-text">GT</span>
+
+        <ul id="mobile-nav-btn-list">
+          <li id="love-icon">
+            <img src="/assets/nav-icons/love.png" alt="" />
+          </li>
+
+          <li id="cart"><img src="/assets/nav-icons/cart.png" alt="" /></li>
+        </ul>
+      </div>
+
+      <div class="mobile-menu-container">
+        <div class="close-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="/womens.html">Womens</a>
+          </li>
+
+          <li>
+            <a href="/mens.html">MENS</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="sub-nav">
         <div class="underline"></div>
         <div class="sub-nav-info">
@@ -69,5 +113,6 @@
     </div>
 
     <script src="/js/menu.js"></script>
+    <script src="/js/mobile-nav.js"></script>
   </body>
 </html>

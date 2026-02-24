@@ -981,4 +981,7 @@ body {
     text-align: left;
     margin-top: 17px;
   }
+  .line-before-footer {
+    display: none;
+  }
 }
