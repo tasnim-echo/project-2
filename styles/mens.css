@@ -103,7 +103,7 @@ body {
   color: #000000;
 }
 .banner h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 45px;
@@ -122,7 +122,8 @@ body {
   margin-top: 21px;
 }
 button.light {
-  padding: 8px 16px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 25px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 13px;
@@ -295,4 +296,38 @@ button.light {
   width: 332px;
   margin-left: 60px;
   z-index: 2;
+}
+/* free your movement */
+.free-movement {
+  width: 100%;
+  background-image: url("/assets/mens-page/bg-img/4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1440 / 598;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.free-movement-content {
+  margin-left: 60px;
+}
+/* NEW: SPEED */
+.new-speed {
+  width: 100%;
+  background-image: url("/assets/mens-page/bg-img/5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1440/644;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.new-speed-content {
+  margin-bottom: 60px;
 }
