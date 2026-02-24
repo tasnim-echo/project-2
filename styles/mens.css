@@ -15,6 +15,7 @@ body {
 }
 
 /* best sellers */
+
 .best-sellers {
   width: 100%;
   aspect-ratio: 1440 / 644;
@@ -182,16 +183,15 @@ button.dark {
 }
 
 /* best-sellers-collection */
+.discounted-price {
+  display: none;
+}
 .collection-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(322px, 1fr));
   gap: 10px;
 }
-/* .collection-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px; 
-} */
+
 .collection-card img {
   width: 100%;
   /* max-height: 384px; max-height is making an image smaller */
@@ -226,7 +226,7 @@ button.dark {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .badge-content {
   display: flex;
@@ -424,4 +424,84 @@ button.dark {
   letter-spacing: 0%;
   text-transform: uppercase;
   margin-top: 17px;
+}
+
+/* mobile screen */
+@media (max-width: 768px) {
+  /* global */
+  .collection-wrapper {
+    margin-inline: 20px;
+    margin-block: 30px;
+  }
+  .collection-wrapper .collection-header {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .collection-wrapper .collection-header .view-all {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .collection-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(161px, 2fr));
+    gap: 10px;
+  }
+
+  .collection-card img {
+    width: 100%;
+    /* max-height: 384px; max-height is making an image smaller */
+    height: 193px;
+    object-fit: cover;
+  }
+  .product-info-men {
+    display: block;
+  }
+
+  .collection-card:nth-child(-n + 2) {
+    display: none;
+  }
+
+  .collection-cards.show-all .collection-card:nth-child(-n + 2) {
+    display: block;
+  }
+
+  /* best-sellers */
+  .best-sellers {
+    height: 530px;
+    aspect-ratio: auto;
+    position: relative;
+    display: flex;
+    align-items: end;
+    background-size: 310%;
+    background-position: 0 0 70%;
+  }
+
+  /* overlay */
+  .best-sellers::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #00000080;
+    z-index: 1;
+  }
+  .best-sellers-content {
+    z-index: 2;
+    margin-bottom: 80px;
+  }
+  /* best sellers collection */
+  .discounted-mobile-view-price {
+    display: none;
+  }
+  .mobile-view-price {
+    display: flex;
+    gap: 5px;
+    align-items: end;
+  }
+  .discounted-price {
+    display: block;
+  }
+  .badge.discount {
+    display: block;
+  }
 }
