@@ -1,5 +1,5 @@
 const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 4.2,
   spaceBetween: 10,
   loop: true, // infinite loop disi
   navigation: {
