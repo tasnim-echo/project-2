@@ -3,7 +3,6 @@ fetch("navbar.html")
   .then((data) => {
     document.getElementById("navbar").innerHTML = data;
 
-    // INIT MOBILE MENU AFTER LOAD
     initMobileMenu();
   });
 
